@@ -1,0 +1,36 @@
+html, body {
+  min-height: 100%;
+}
+body {
+  background: #92c7d6;
+  background-image: -webkit-radial-gradient(top, circle cover, #9de6dd, #427388 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #9de6dd, #427388 80%);
+  background-image: -o-radial-gradient(top, circle cover, #9de6dd, #427388 80%);
+  background-image: radial-gradient(top, circle cover, #9de6dd, #427388 80%);
+}
+body{
+  padding-top: 50px;
+  color: #78909C;
+}
+
+hr{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+ .title{
+   font-family: 'Raleway';
+   text-align: center;
+ }
+
+.containerButtonImport{
+  margin-left: 45.5%;
+}
+
+.containerButtonGo{
+  margin-left: 47%;
+}

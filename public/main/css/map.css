@@ -1,0 +1,19 @@
+.mapboxgl-popup{
+  max-width: 500px;
+  font: 14px/22px;
+  font-family: 'Raleway';
+}
+
+#containerMap{
+  height: 80%;
+  width: 80%;
+  align-items: center;
+}
+
+#map{
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
+  height: 800px;
+}
+
