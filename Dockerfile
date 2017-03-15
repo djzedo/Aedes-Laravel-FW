@@ -1,9 +1,11 @@
 FROM php:7.0-apache
 
+RUN apt-get update 
+RUN apt-get install -y git
 RUN docker-php-ext-install pdo_mysql
-RUN mkdir /var/www/html/Aedes
-ADD . /var/www/html/Aedes
-ADD ./Aedes.conf /etc/apache2/sites-available
+WORKDIR /var/www/html
+RUN git clone https://github.com/djzedo/Aedes-Laravel-FW.git ./Aedes
+RUN cp Aedes/Aedes.conf /etc/apache2/sites-available
 
 RUN chgrp -R www-data /var/www/html/Aedes
 RUN chmod -R 775 /var/www/html/Aedes/storage
