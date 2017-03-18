@@ -45,7 +45,7 @@ return [
             'port' => '3306',
             'database' => 'Aedes',
             'username' => 'root',
-            'password' => 'aedes.2017*',
+            'password' => 'mosquito',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
