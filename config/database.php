@@ -43,7 +43,7 @@ return [
             'driver' => 'mysql',
             'host' => '10.131.137.165',
             'port' => '3306',
-            'database' => 'Aedes',
+            'database' => 'aedes',
             'username' => 'root',
             'password' => 'mosquito',
             'charset' => 'utf8mb4',
