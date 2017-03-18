@@ -1,8 +1,8 @@
-FROM php:7.0-apache
+FROM php:5-apache
 
 RUN apt-get update 
 RUN apt-get install -y git unzip
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install pdo_mysql mysqli mysql pdo
 WORKDIR /var/www/html
 RUN git clone https://github.com/djzedo/Aedes-Laravel-FW.git ./Aedes
 RUN cp Aedes/Aedes.conf /etc/apache2/sites-available
