@@ -1,7 +1,7 @@
 
 <?php
 
-$link = mysqli_connect("127.0.0.1","root","","aedes");
+$link = mysqli_connect("10.131.137.165","root","mosquito","aedes");
 
 if (mysqli_connect_error()){
 
