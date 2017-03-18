@@ -41,11 +41,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => '127.0.0.1',
+            'host' => '10.131.137.165',
             'port' => '3306',
             'database' => 'Aedes',
             'username' => 'root',
-            'password' => '',
+            'password' => 'aedes.2017*',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
