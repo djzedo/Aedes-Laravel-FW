@@ -1,0 +1,11 @@
+Para ejecutar esta aplicación, basta con la ejecución de un contenedor
+con la imagen que se produce. Alternativamente se puede hacer un pull
+desde docker hub.
+
+Metodo manual: Con el Dockerfile
+$ docker build -t laravel-app .
+$ dokcer run -p80:80 laravel-app
+
+Metodo con DockerHub:
+$ docker pull ccorre20/laravel-app
+$ docker run -p80:80 ccorre20/laravel-app
