@@ -1,8 +1,11 @@
 FROM php:5-apache
 
 RUN apt-get update 
-RUN apt-get install -y git unzip
+RUN apt-get install -y git unzip wget
 RUN docker-php-ext-install pdo_mysql mysqli mysql pdo
+RUN wget https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-stable_current_amd64.deb
+RUN dpkg -i mod-pagespeed-*.deb
+RUN apt-get -f install
 WORKDIR /var/www/html
 RUN git clone https://github.com/djzedo/Aedes-Laravel-FW.git ./Aedes
 RUN cp Aedes/Aedes.conf /etc/apache2/sites-available
